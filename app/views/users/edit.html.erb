@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <%= form_for @user, url: {action: "edit"}, html: {class: "nifty_form"} do |f| %>
+    username: <%= f.text_field :username %><br>
+    email: <%= f.text_field :email %><br>
+    password: <%= f.password_field :password%><br>
+    <%= f.submit "Edit user" %>
+  <% end %>
+</html>
